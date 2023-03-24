@@ -368,8 +368,7 @@ def help_button(update, context):
 
     except BadRequest:
         pass
-
-    
+   
     elif query.data == "yins_credit":
         query.message.edit_text(
             text=f"💸 Bagi kalian yang ingin berdonasi sebagai ucapan terimakasih kepada pembuat 𝚁𝙰𝙶𝙽𝙰 〆 𝚁𝙾𝙱𝙾𝚃,\n"
