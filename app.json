@@ -1,5 +1,5 @@
 {
-      "name": "Yins Robot",
+      "name": "𝚁𝙰𝙶𝙽𝙰 〆 𝚁𝙾𝙱𝙾𝚃",
       "description": "A Powerful  Telegram group management bot with anime theme.",
       "keywords": [
          "telegram",
@@ -10,7 +10,7 @@
       ],
     
    "logo":    "https://telegra.ph/file/64f4b1e3ab6d6911447d2.jpg",  
-   "repository": "https://github.com/AyiinXd/YinsRobot",
+   "repository": "https://github.com/Ayubskk/YinsRobot",
    "stack": "heroku-22",
    "addons": [
           {
@@ -32,32 +32,32 @@
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
-         "value": ""
+         "value": "6238341090:AAHgmIZWAdnigRAZcuD_bYUsMCTs2p0EQkE"
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "25117495"
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "426468e60b18b4b444ec45d2840f2dc9"
       },    
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1700405732"
+         "value": "1696941720"
      },
 
       "STRING_SESSION": {
          "description": "Fill with telethon string session.",
          "required": true,
-         "value": "" 
+         "value": "1BVtsOJgBu4XV6gsQ0HUzn1LVQHbzKOwE71RN6Q4XNfaASQi0-Ts6Vx71ZspqSAvCUk_rWzRl7H1W7ndSIiwVkvRojOjg1wc6FuF0jzC62lQoCXC87_zVHlLIKgG7iDYn4-1HrFzujWPvPQx5rOhCS8SQdIlWoo-VmaXbqumq6IeLCwe1JknK1iL05QkGXGX1VyCgTCCVKQsslRMflZPMxzEV-LJmALuBVQjPSpIiF0BtNNG5Yw-MJb2PPpOMdtsL7plPojCcHxeX2GlKkczSVP7bO6ukEFXvGXaNqa5hhL6JxCozMJmRs8gH-cdkOcX2GVPmHEa0IaRAg6DE7EG_qYKQAGtr2is=" 
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
-        "value": "ba40ec17-19ce-470f-9a27-c05d0e458920"
+        "value": "65cf8fa6-ed02-46a3-813e-75ca995bf4ee"
       },
       "HEROKU_APP_NAME": {
         "description": "Enter the Heroku app name here (Must an exact same name with your input above).",
@@ -65,37 +65,37 @@
       },
       "BOT_USERNAME": {
          "description": "username of your bot without the @",
-         "value": "YinzRobot"
+         "value": "zenv1bot"
       },
 
       "BOT_ID": {
          "description": "to get your bot_id using other bot or userbot",
-         "value": ""
+         "value": "6238341090"
       },
 
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "AyiinXd"
+         "value": "Archanistz"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "AyiinXdSupport"
+         "value": "zenzproject"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": ""
+         "value": "mongodb+srv://RagnaXRachel:756875687@ragnaxrachel.jgk5mbs.mongodb.net/?retryWrites=true&w=majority"
       },
      "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-100123456'",
          "required": true,
-         "value": "-100"
+         "value": "-1001801258095"
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "-100"
+         "value": "-1001801258095"
       },      
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
@@ -111,12 +111,12 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": ""
+         "value": "1696941720"
      },
       "ERROR_LOG": {
          "description": "ID of log for show error.",
          "required": false,
-         "value": "-100"
+         "value": "-1001801258095"
       },
         "ARQ_API": {
             "description": "Get this from @ARQRobot.",
@@ -167,7 +167,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
          "required": false,
-         "value": "https://t.me/AyiinSupport/100"
+         "value": "https://link.dana.id/qr/vb7wc5b2"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
