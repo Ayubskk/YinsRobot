@@ -83,27 +83,41 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an Yins management bot [✨](https://telegra.ph/file/64f4b1e3ab6d6911447d2.jpg)
+✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/eb5c81847e1d1144f7f7d.jpg)
 ────────────────────────
-× *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
+× Uptime : `{}`
+× Users : `{}`
+× Group : `{}`
 ────────────────────────
 ✪ Hit /help to see my available commands.
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Yins Robot", callback_data="yins_"),
-    ],
-    [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
+            text="🎖️ꜱᴜᴘᴘᴏʀᴛ", url=f"t.me/Zenzproject"
+        ),
+        InlineKeyboardButton(
+            text="🏅ᴄʜᴀɴɴᴇʟ", url=f"t.me/publikgsi"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Yins To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="👤 ᴏᴡɴᴇʀ", url=f"t.me/archanistz"
+        ),
+    ],
+    [
+        InlineKeyboardButton(
+            text="🗂️ ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"
+        ),
+        InlineKeyboardButton(
+            text="🎁 ᴅᴏɴᴀᴛᴇ", callback_data="yins_credit"
+        ),
+    ],
+    [
+        InlineKeyboardButton(
+            text="➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"t.me/{bu}?startgroup=new"
+        ),
     ],
 ]
 
@@ -113,7 +127,7 @@ Click on the button bellow to get description about specifics command."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @AyiinXd \
+ You can support the project by contacting @Archanistz \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -455,33 +469,16 @@ def yins_about_callback(update, context):
 
     elif query.data == "yins_credit":
         query.message.edit_text(
-            text=f"๏ Credis for Yins\n"
-            "\nHere Developers Making And Give Inspiration For Made The YinsRobot",
+            text=f"💸 Bagi kalian yang ingin berdonasi sebagai ucapan terimakasih kepada pembuat 𝚁𝙰𝙶𝙽𝙰 〆 𝚁𝙾𝙱𝙾𝚃,\n"
+            "\nKalian dapat langsung menghubungi owner atau klik dibawah ini.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="AyiinXd", url="https://github.com/AyiinXd"),
-                    InlineKeyboardButton(text="Ayiin-Userbot", url="https://github.com/AyiinXd/Ayiin-Userbot"),
+                    InlineKeyboardButton(text="🤵 ᴢᴇʏ", url="https://t.me/Archanistz"),
                  ],
                  [
-                    InlineKeyboardButton(text="AyiinMusic", url="https://github.com/AyiinXd/AyiinMusic"),
-                    InlineKeyboardButton(text="YinsRobot", url="https://github.com/AyiinXd/YinsRobot"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Anime Kaizoku", url="https://github.com/animekaizoku"),
-                    InlineKeyboardButton(text="TheGhost Hunter", url="https://github.com/HuntingBots"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Inuka Asith", url="https://github.com/inukaasith"),
-                    InlineKeyboardButton(text="Noob-Kittu", url="https://github.com/noob-kittu"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Queen Arzoo", url="https://github.com/QueenArzoo"),
-                    InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="yins_"),
+                    InlineKeyboardButton(text="⬅️ ɢᴏ ʙᴀᴄᴋ", callback_data="yins_back"),
                  ]
                 ]
             ),
@@ -749,7 +746,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1606221784:
+        if OWNER_ID != 1696941720:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
@@ -798,7 +795,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "✨ Hai, YinzRobot Berhasil Diaktifkan",
+                "✨ Hai, 𝚁𝙰𝙶𝙽𝙰 〆 𝚁𝙾𝙱𝙾𝚃 Telah Berhasil Diaktifkan",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
