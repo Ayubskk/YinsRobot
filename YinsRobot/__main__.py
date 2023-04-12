@@ -82,30 +82,30 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/eb5c81847e1d1144f7f7d.jpg)
+*ʜᴇʟʟᴏ, {} !*
+✪ Saya adalah bot manage yang dapat memutar musik dan mengelola grup anda ✨
 ────────────────────────
-× Uptime : `{}`
-× Users : `{}`
-× Group : `{}`
+× ᴜᴘᴛɪᴍᴇ : `{}`
+× ɢʀᴏᴜᴘ : `{}`
+× ᴜꜱᴇʀꜱ : `{}`
 ────────────────────────
-✪ Hit /help to see my available commands.
+✪ Tekan /help untuk melihat perintah manage dan /mhelp untuk melihat perintah musik yang tersedia.
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="🎖️ꜱᴜᴘᴘᴏʀᴛ", url=f"t.me/Zenzproject"),
-        InlineKeyboardButton(text="🏅ᴄʜᴀɴɴᴇʟ", url=f"t.me/publikgsi"),
+        InlineKeyboardButton(text="🎖️Support", url=f"t.me/Zenzproject"),
+        InlineKeyboardButton(text="🏅Channel", url=f"t.me/publikgsi"),
     ],
     [
-        InlineKeyboardButton(text="👤 ᴏᴡɴᴇʀ", url=f"t.me/archanistz"),
+        InlineKeyboardButton(text="👤 Owner", url=f"t.me/archanistz"),
     ],
     [
-        InlineKeyboardButton(text="🗂️ ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
-        InlineKeyboardButton(text="🎁 ᴅᴏɴᴀᴛᴇ", callback_data="yins_credit"),
+        InlineKeyboardButton(text="🗂️ Commands", callback_data="help_back"),
+        InlineKeyboardButton(text="🎁 Donate", callback_data="yins_credit"),
     ],
     [
-        InlineKeyboardButton(text="➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"t.me/{bu}?startgroup=new"),
+        InlineKeyboardButton(text="➕ Tambahkan Saya Ke Grup", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
@@ -457,16 +457,16 @@ def yins_about_callback(update, context):
 
     elif query.data == "yins_credit":
         query.message.edit_text(
-            text=f"💸 Bagi kalian yang ingin berdonasi sebagai ucapan terimakasih kepada pembuat 𝚁𝙰𝙶𝙽𝙰 〆 𝚁𝙾𝙱𝙾𝚃,"
+            text=f"💸 Bagi kalian yang ingin berdonasi sebagai ucapan terimakasih kepada pembuat bot ini,"
             "\nKalian dapat langsung menghubungi owner atau klik dibawah ini.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🤵 ᴢᴇʏ", url="https://t.me/Archanistz"),
+                    InlineKeyboardButton(text="🤵 Idamanmu", url="https://t.me/Archanistz"),
                  ],
                  [
-                    InlineKeyboardButton(text="⬅️ ɢᴏ ʙᴀᴄᴋ", callback_data="yins_back"),
+                    InlineKeyboardButton(text="⬅️ Go Back", callback_data="yins_back"),
                  ],
                 ]
             ),
@@ -783,7 +783,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "✨ Hai, 𝚁𝙰𝙶𝙽𝙰 〆 𝚁𝙾𝙱𝙾𝚃 Telah Berhasil Diaktifkan",
+                "✨ Halo bos, Saya Telah Aktif Kembali",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
@@ -796,7 +796,7 @@ def main():
     test_handler = CommandHandler("test", test, run_async=True)
     start_handler = CommandHandler("start", start, run_async=True)
 
-    help_handler = CommandHandler("help", get_help, run_async=True)
+    help_handler = CommandHandler("mhelp", get_help, run_async=True)
     help_callback_handler = CallbackQueryHandler(
         help_button, pattern=r"help_.*", run_async=True
     )
