@@ -83,11 +83,11 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *ʜᴇʟʟᴏ, {} !*
-✪ Saya adalah bot manage yang dapat memutar musik dan mengelola grup anda ✨
+✪ Saya adalah bot manage yang dapat memutar musik dan mengelola grup anda [✨](https://telegra.ph/file/529c5d5434f8bbd03f784.jpg)
 ────────────────────────
-× ᴜᴘᴛɪᴍᴇ : `{}`
-× ɢʀᴏᴜᴘ : `{}`
-× ᴜꜱᴇʀꜱ : `{}`
+× Uptime : `{}`
+× Users : `{}`
+× Group : `{}`
 ────────────────────────
 ✪ Tekan /mhelp untuk melihat perintah manage dan /help untuk melihat perintah musik yang tersedia.
 """
