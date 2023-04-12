@@ -89,7 +89,7 @@ PM_START_TEXT = """
 × ɢʀᴏᴜᴘ : `{}`
 × ᴜꜱᴇʀꜱ : `{}`
 ────────────────────────
-✪ Tekan /help untuk melihat perintah manage dan /mhelp untuk melihat perintah musik yang tersedia.
+✪ Tekan /mhelp untuk melihat perintah manage dan /help untuk melihat perintah musik yang tersedia.
 """
 
 buttons = [
