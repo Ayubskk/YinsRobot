@@ -111,7 +111,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-Click on the button bellow to get description about specifics command."""
+Klik tombol di bawah untuk mendapatkan informasi tentang perintah."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
