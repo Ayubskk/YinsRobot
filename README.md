@@ -38,7 +38,7 @@ This Bot is Created by KennedyProject, If your kanging this without fork at leas
 ```
 
 <p align="left">
-<a href="https://dashboard.heroku.com/new?template=https://github.com/ragnarobot/YinsRobot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>
+<a href="https://dashboard.heroku.com/new?template=https://github.com/Ayubskk/YinsRobot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>
 
 
 ### Support
