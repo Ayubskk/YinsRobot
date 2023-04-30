@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʟʟᴏ, {} !*
+*Hai, {} !*
 ✜ Saya adalah bot manage yang dapat memutar musik dan mengelola grup anda [✨](https://telegra.ph/file/529c5d5434f8bbd03f784.jpg)
 ────────────────────────
 × Uptime : `{}`
@@ -94,15 +94,15 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="🎖️Support", url=f"t.me/Zenzproject"),
-        InlineKeyboardButton(text="🏅Channel", url=f"t.me/publikgsi"),
+        InlineKeyboardButton(text="Support", url=f"t.me/Goldensid"),
+        InlineKeyboardButton(text="Channel", url=f"t.me/publikgsid"),
     ],
     [
-        InlineKeyboardButton(text="👤 Owner", url=f"t.me/archanistz"),
+        InlineKeyboardButton(text="Owner", url=f"t.me/archanistz"),
     ],
     [
-        InlineKeyboardButton(text="🗂️ Commands", callback_data="help_back"),
-        InlineKeyboardButton(text="🎁 Donate", callback_data="yins_credit"),
+        InlineKeyboardButton(text="Commands", callback_data="help_back"),
+        InlineKeyboardButton(text="Donate", callback_data="yins_credit"),
     ],
     [
         InlineKeyboardButton(text="➕ Tambahkan Saya Ke Grup", url=f"t.me/{bu}?startgroup=new"),
