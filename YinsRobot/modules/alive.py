@@ -21,5 +21,5 @@ async def awake(event):
   TEXT += f"✨ **Pyrogram Version   :** `{pyrover}` \n\n"
   TEXT += f"✨ **GSIDRobot Version  :** `{yinzver}` \n\n"
   TEXT += "**Terima Kasih Telah Menambahkan Saya ✨**"
-  BUTTON = [[Button.url("Bantuan", "https://t.me/goldensid_bot?start=help"), Button.url("Support", "https://t.me/Zenzproject")]]
+  BUTTON = [[Button.url("Bantuan", "https://t.me/goldensid_bot?start=help"), Button.url("Support", "https://t.me/Publikgsid")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
