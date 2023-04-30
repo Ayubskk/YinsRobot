@@ -94,10 +94,6 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="Support", url=f"t.me/Goldensid"),
-        InlineKeyboardButton(text="Channel", url=f"t.me/publikgsid"),
-    ],
-    [
         InlineKeyboardButton(text="Owner", url=f"t.me/archanistz"),
     ],
     [
